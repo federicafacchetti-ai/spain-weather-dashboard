@@ -1,0 +1,20 @@
+# ── SECRETS — never commit ────────────────────────────────────────
+# AEMET Open Data API key
+.aemet_key
+
+# ── Local runtime state — not needed on GitHub Pages ─────────────
+# Fetcher accumulates data locally; index.html has all data embedded.
+data/
+
+# ── System / editor cruft ────────────────────────────────────────
+.DS_Store
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+.idea/
+.vscode/
+
+# ── Any old snapshots or backups ─────────────────────────────────
+*.pre_filter_backup
+*.bak

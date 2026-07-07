@@ -1,0 +1,1397 @@
+[
+  {
+    "code": "ACO",
+    "name": "Alcoy",
+    "ops_subregion": "ES - VALENCIA",
+    "com_region": "ES EAST",
+    "handling": "GEN2",
+    "comunidad": "Comunidad Valenciana",
+    "provincia": "Alicante"
+  },
+  {
+    "code": "AGU",
+    "name": "Aguadulce",
+    "ops_subregion": "ES - ANDALUSIA",
+    "com_region": "ES SOUTH",
+    "handling": "GEN2",
+    "comunidad": "Andalucía",
+    "provincia": "Almería"
+  },
+  {
+    "code": "AHT",
+    "name": "Alhaurin de la Torre",
+    "ops_subregion": "ES - ANDALUSIA",
+    "com_region": "ES SOUTH",
+    "handling": "GEN2",
+    "comunidad": "Andalucía",
+    "provincia": "Málaga"
+  },
+  {
+    "code": "AJZ",
+    "name": "Aranjuez",
+    "ops_subregion": "ES - MADRID",
+    "com_region": "ES MADRID",
+    "handling": "GEN2",
+    "comunidad": "Comunidad de Madrid",
+    "provincia": "Madrid"
+  },
+  {
+    "code": "ALB",
+    "name": "Albacete",
+    "ops_subregion": "ES - CENTER",
+    "com_region": "ES EAST",
+    "handling": "GEN2",
+    "comunidad": "Castilla La Mancha",
+    "provincia": "Albacete"
+  },
+  {
+    "code": "ALC",
+    "name": "Alicante",
+    "ops_subregion": "ES - VALENCIA",
+    "com_region": "ES EAST",
+    "handling": "GEN2",
+    "comunidad": "Comunidad Valenciana",
+    "provincia": "Alicante"
+  },
+  {
+    "code": "ALG",
+    "name": "Algeciras",
+    "ops_subregion": "ES - ANDALUSIA",
+    "com_region": "ES SOUTH",
+    "handling": "GEN2",
+    "comunidad": "Andalucía",
+    "provincia": "Cádiz"
+  },
+  {
+    "code": "ALM",
+    "name": "Almería",
+    "ops_subregion": "ES - ANDALUSIA",
+    "com_region": "ES SOUTH",
+    "handling": "GEN2",
+    "comunidad": "Andalucía",
+    "provincia": "Almería"
+  },
+  {
+    "code": "AND",
+    "name": "Andujar",
+    "ops_subregion": "ES - ANDALUSIA",
+    "com_region": "ES SOUTH",
+    "handling": "GEN2",
+    "comunidad": "Andalucía",
+    "provincia": "Jaén"
+  },
+  {
+    "code": "ARU",
+    "name": "Arucas",
+    "ops_subregion": "ES - CANARY",
+    "com_region": "ES SOUTH",
+    "handling": "GEN2",
+    "comunidad": "Canarias",
+    "provincia": "Las Palmas"
+  },
+  {
+    "code": "AVI",
+    "name": "Aviles",
+    "ops_subregion": "ES - NORTH WEST",
+    "com_region": "ES NORTH",
+    "handling": "GEN2",
+    "comunidad": "Asturias",
+    "provincia": "Asturias"
+  },
+  {
+    "code": "BAY",
+    "name": "Bayona",
+    "ops_subregion": "ES - NORTH WEST",
+    "com_region": "ES NORTH",
+    "handling": "GEN2",
+    "comunidad": "Galicia",
+    "provincia": "Pontevedra"
+  },
+  {
+    "code": "BCN",
+    "name": "Barcelona",
+    "ops_subregion": "ES - CATALONIA",
+    "com_region": "ES NORTH EAST",
+    "handling": "GEN2",
+    "comunidad": "Cataluña",
+    "provincia": "Barcelona"
+  },
+  {
+    "code": "BIL",
+    "name": "Bilbao",
+    "ops_subregion": "ES - NORTH CENTER",
+    "com_region": "ES NORTH",
+    "handling": "GEN2",
+    "comunidad": "País Vasco",
+    "provincia": "Vizcaya"
+  },
+  {
+    "code": "BJZ",
+    "name": "Badajoz",
+    "ops_subregion": "ES - CENTER",
+    "com_region": "ES EAST",
+    "handling": "GEN2",
+    "comunidad": "Extremadura",
+    "provincia": "Badajoz"
+  },
+  {
+    "code": "BKL",
+    "name": "Barakaldo",
+    "ops_subregion": "ES - NORTH CENTER",
+    "com_region": "ES NORTH",
+    "handling": "GEN2",
+    "comunidad": "País Vasco",
+    "provincia": "Vizcaya"
+  },
+  {
+    "code": "BNR",
+    "name": "Benidorm - Altea",
+    "ops_subregion": "ES - VALENCIA",
+    "com_region": "ES EAST",
+    "handling": "GEN2",
+    "comunidad": "Comunidad Valenciana",
+    "provincia": "Alicante"
+  },
+  {
+    "code": "BRU",
+    "name": "Brunete",
+    "ops_subregion": "ES - MADRID",
+    "com_region": "ES MADRID",
+    "handling": "GEN2",
+    "comunidad": "Comunidad de Madrid",
+    "provincia": "Madrid"
+  },
+  {
+    "code": "CAA",
+    "name": "Cartagena",
+    "ops_subregion": "ES - MURCIA",
+    "com_region": "ES EAST",
+    "handling": "GEN2",
+    "comunidad": "Región de Murcia",
+    "provincia": "Murcia"
+  },
+  {
+    "code": "CBL",
+    "name": "Cambrils",
+    "ops_subregion": "ES - CATALONIA",
+    "com_region": "ES NORTH EAST",
+    "handling": "GEN2",
+    "comunidad": "Cataluña",
+    "provincia": "Tarragona"
+  },
+  {
+    "code": "CDZ",
+    "name": "Cadiz",
+    "ops_subregion": "ES - ANDALUSIA",
+    "com_region": "ES SOUTH",
+    "handling": "GEN2",
+    "comunidad": "Andalucía",
+    "provincia": "Cádiz"
+  },
+  {
+    "code": "CHA",
+    "name": "Las Chafiras",
+    "ops_subregion": "ES - CANARY",
+    "com_region": "ES SOUTH",
+    "handling": "GEN2",
+    "comunidad": "Canarias",
+    "provincia": "Santa Cruz de Tenerife"
+  },
+  {
+    "code": "CHF",
+    "name": "Chiclana de la Frontera",
+    "ops_subregion": "ES - ANDALUSIA",
+    "com_region": "ES SOUTH",
+    "handling": "GEN2",
+    "comunidad": "Andalucía",
+    "provincia": "Cádiz"
+  },
+  {
+    "code": "CLP",
+    "name": "Calpe",
+    "ops_subregion": "ES - VALENCIA",
+    "com_region": "ES EAST",
+    "handling": "GEN2",
+    "comunidad": "Comunidad Valenciana",
+    "provincia": "Alicante"
+  },
+  {
+    "code": "CND",
+    "name": "Candelaria",
+    "ops_subregion": "ES - CANARY",
+    "com_region": "ES SOUTH",
+    "handling": "GEN2",
+    "comunidad": "Canarias",
+    "provincia": "Santa Cruz de Tenerife"
+  },
+  {
+    "code": "CNG",
+    "name": "Cangas",
+    "ops_subregion": "ES - NORTH WEST",
+    "com_region": "ES NORTH",
+    "handling": "GEN2",
+    "comunidad": "Galicia",
+    "provincia": "Pontevedra"
+  },
+  {
+    "code": "COA",
+    "name": "Costa de Adeje",
+    "ops_subregion": "ES - CANARY",
+    "com_region": "ES SOUTH",
+    "handling": "GEN2",
+    "comunidad": "Canarias",
+    "provincia": "Santa Cruz de Tenerife"
+  },
+  {
+    "code": "COL",
+    "name": "Colmenar Viejo",
+    "ops_subregion": "ES - MADRID",
+    "com_region": "ES MADRID",
+    "handling": "GEN2",
+    "comunidad": "Comunidad de Madrid",
+    "provincia": "Madrid"
+  },
+  {
+    "code": "CRE",
+    "name": "Ciudad Real",
+    "ops_subregion": "ES - CENTER",
+    "com_region": "ES EAST",
+    "handling": "GEN2",
+    "comunidad": "Castilla-La Mancha",
+    "provincia": "Ciudad Real"
+  },
+  {
+    "code": "CRL",
+    "name": "Carballo",
+    "ops_subregion": "ES - NORTH WEST",
+    "com_region": "ES NORTH",
+    "handling": "GEN2",
+    "comunidad": "Galicia",
+    "provincia": "La Coruña"
+  },
+  {
+    "code": "CST",
+    "name": "Castelldefels",
+    "ops_subregion": "ES - CATALONIA",
+    "com_region": "ES NORTH EAST",
+    "handling": "GEN2",
+    "comunidad": "Cataluña",
+    "provincia": "Barcelona"
+  },
+  {
+    "code": "CTL",
+    "name": "Castellón de la Plana",
+    "ops_subregion": "ES - VALENCIA",
+    "com_region": "ES EAST",
+    "handling": "GEN2",
+    "comunidad": "Comunidad Valenciana",
+    "provincia": "Castellón"
+  },
+  {
+    "code": "CUG",
+    "name": "Sant Cugat del Vallès y Rubí",
+    "ops_subregion": "ES - CATALONIA",
+    "com_region": "ES NORTH EAST",
+    "handling": "GEN2",
+    "comunidad": "Cataluña",
+    "provincia": "Barcelona"
+  },
+  {
+    "code": "CUL",
+    "name": "Cullera",
+    "ops_subregion": "ES - VALENCIA",
+    "com_region": "ES EAST",
+    "handling": "GEN2",
+    "comunidad": "Comunidad Valenciana",
+    "provincia": "Valencia"
+  },
+  {
+    "code": "CUN",
+    "name": "Cuenca",
+    "ops_subregion": "ES - CENTER",
+    "com_region": "ES EAST",
+    "handling": "GEN2",
+    "comunidad": "Castilla-La Mancha",
+    "provincia": "Cuenca"
+  },
+  {
+    "code": "CVI",
+    "name": "Collado Villalba",
+    "ops_subregion": "ES - MADRID",
+    "com_region": "ES MADRID",
+    "handling": "GEN2",
+    "comunidad": "Comunidad de Madrid",
+    "provincia": "Madrid"
+  },
+  {
+    "code": "DNA",
+    "name": "Denia",
+    "ops_subregion": "ES - VALENCIA",
+    "com_region": "ES EAST",
+    "handling": "GEN2",
+    "comunidad": "Comunidad Valenciana",
+    "provincia": "Alicante"
+  },
+  {
+    "code": "DSH",
+    "name": "Dos Hermanas",
+    "ops_subregion": "ES - ANDALUSIA",
+    "com_region": "ES SOUTH",
+    "handling": "GEN2",
+    "comunidad": "Andalucía",
+    "provincia": "Sevilla"
+  },
+  {
+    "code": "EAS",
+    "name": "Donostia - San Sebastián",
+    "ops_subregion": "ES - NORTH CENTER",
+    "com_region": "ES NORTH",
+    "handling": "GEN2",
+    "comunidad": "País Vasco",
+    "provincia": "Guipúzcoa"
+  },
+  {
+    "code": "EJI",
+    "name": "El Ejido",
+    "ops_subregion": "ES - ANDALUSIA",
+    "com_region": "ES SOUTH",
+    "handling": "GEN2",
+    "comunidad": "Andalucía",
+    "provincia": "Almería"
+  },
+  {
+    "code": "ELP",
+    "name": "El Puerto de Santamaría",
+    "ops_subregion": "ES - ANDALUSIA",
+    "com_region": "ES SOUTH",
+    "handling": "GEN2",
+    "comunidad": "Andalucía",
+    "provincia": "Cádiz"
+  },
+  {
+    "code": "ELX",
+    "name": "Elche",
+    "ops_subregion": "ES - VALENCIA",
+    "com_region": "ES EAST",
+    "handling": "GEN2",
+    "comunidad": "Comunidad Valenciana",
+    "provincia": "Alicante"
+  },
+  {
+    "code": "EST",
+    "name": "Estepona",
+    "ops_subregion": "ES - ANDALUSIA",
+    "com_region": "ES SOUTH",
+    "handling": "GEN2",
+    "comunidad": "Andalucía",
+    "provincia": "Málaga"
+  },
+  {
+    "code": "FDA",
+    "name": "Fuenlabrada",
+    "ops_subregion": "ES - MADRID",
+    "com_region": "ES MADRID",
+    "handling": "GEN2",
+    "comunidad": "Comunidad de Madrid",
+    "provincia": "Madrid"
+  },
+  {
+    "code": "FER",
+    "name": "San Fernando",
+    "ops_subregion": "ES - ANDALUSIA",
+    "com_region": "ES SOUTH",
+    "handling": "GEN2",
+    "comunidad": "Andalucía",
+    "provincia": "Cádiz"
+  },
+  {
+    "code": "FIG",
+    "name": "Figueras",
+    "ops_subregion": "ES - CATALONIA",
+    "com_region": "ES NORTH EAST",
+    "handling": "GEN2",
+    "comunidad": "Cataluña",
+    "provincia": "Gerona"
+  },
+  {
+    "code": "FNG",
+    "name": "Fuengirola",
+    "ops_subregion": "ES - ANDALUSIA",
+    "com_region": "ES SOUTH",
+    "handling": "GEN2",
+    "comunidad": "Andalucía",
+    "provincia": "Málaga"
+  },
+  {
+    "code": "FRN",
+    "name": "Ferrol y Naron",
+    "ops_subregion": "ES - NORTH WEST",
+    "com_region": "ES NORTH",
+    "handling": "GEN2",
+    "comunidad": "Galicia",
+    "provincia": "La Coruña"
+  },
+  {
+    "code": "GAN",
+    "name": "Gandia",
+    "ops_subregion": "ES - VALENCIA",
+    "com_region": "ES EAST",
+    "handling": "GEN2",
+    "comunidad": "Comunidad Valenciana",
+    "provincia": "Valencia"
+  },
+  {
+    "code": "GAV",
+    "name": "Gava - Viladecans - Sant Boi",
+    "ops_subregion": "ES - CATALONIA",
+    "com_region": "ES NORTH EAST",
+    "handling": "GEN2",
+    "comunidad": "Cataluña",
+    "provincia": "Barcelona"
+  },
+  {
+    "code": "GDL",
+    "name": "Guadalajara",
+    "ops_subregion": "ES - CENTER",
+    "com_region": "ES EAST",
+    "handling": "GEN2",
+    "comunidad": "Castilla-La Mancha",
+    "provincia": "Guadalajara"
+  },
+  {
+    "code": "GIJ",
+    "name": "Gijon",
+    "ops_subregion": "ES - NORTH WEST",
+    "com_region": "ES NORTH",
+    "handling": "GEN2",
+    "comunidad": "Asturias",
+    "provincia": "Asturias"
+  },
+  {
+    "code": "GLE",
+    "name": "Granollers",
+    "ops_subregion": "ES - CATALONIA",
+    "com_region": "ES NORTH EAST",
+    "handling": "GEN2",
+    "comunidad": "Cataluña",
+    "provincia": "Barcelona"
+  },
+  {
+    "code": "GRA",
+    "name": "Granada",
+    "ops_subregion": "ES - ANDALUSIA",
+    "com_region": "ES SOUTH",
+    "handling": "GEN2",
+    "comunidad": "Andalucía",
+    "provincia": "Granada"
+  },
+  {
+    "code": "GRO",
+    "name": "Girona",
+    "ops_subregion": "ES - CATALONIA",
+    "com_region": "ES NORTH EAST",
+    "handling": "GEN2",
+    "comunidad": "Cataluña",
+    "provincia": "Gerona"
+  },
+  {
+    "code": "GTX",
+    "name": "Getxo",
+    "ops_subregion": "ES - NORTH CENTER",
+    "com_region": "ES NORTH",
+    "handling": "GEN2",
+    "comunidad": "País Vasco",
+    "provincia": "Vizcaya"
+  },
+  {
+    "code": "HEN",
+    "name": "Alcalá de Henares y Torrejón de Ardoz",
+    "ops_subregion": "ES - MADRID",
+    "com_region": "ES MADRID",
+    "handling": "GEN2",
+    "comunidad": "Comunidad de Madrid",
+    "provincia": "Madrid"
+  },
+  {
+    "code": "HSK",
+    "name": "Huesca",
+    "ops_subregion": "ES - NORTH CENTER",
+    "com_region": "ES NORTH",
+    "handling": "GEN2",
+    "comunidad": "Aragón",
+    "provincia": "Huesca"
+  },
+  {
+    "code": "HUV",
+    "name": "Huelva",
+    "ops_subregion": "ES - ANDALUSIA",
+    "com_region": "ES SOUTH",
+    "handling": "GEN2",
+    "comunidad": "Andalucía",
+    "provincia": "Huelva"
+  },
+  {
+    "code": "IBZ",
+    "name": "Ibiza",
+    "ops_subregion": "ES - BALEARIC",
+    "com_region": "ES NORTH EAST",
+    "handling": "GEN2",
+    "comunidad": "Baleares",
+    "provincia": "Baleares"
+  },
+  {
+    "code": "IGU",
+    "name": "Igualada",
+    "ops_subregion": "ES - CATALONIA",
+    "com_region": "ES NORTH EAST",
+    "handling": "GEN2",
+    "comunidad": "Cataluña",
+    "provincia": "Barcelona"
+  },
+  {
+    "code": "INC",
+    "name": "Inca",
+    "ops_subregion": "ES - BALEARIC",
+    "com_region": "ES NORTH EAST",
+    "handling": "GEN2",
+    "comunidad": "Baleares",
+    "provincia": "Baleares"
+  },
+  {
+    "code": "JAV",
+    "name": "Javea",
+    "ops_subregion": "ES - VALENCIA",
+    "com_region": "ES EAST",
+    "handling": "GEN2",
+    "comunidad": "Comunidad Valenciana",
+    "provincia": "Alicante"
+  },
+  {
+    "code": "JEN",
+    "name": "Jaen",
+    "ops_subregion": "ES - ANDALUSIA",
+    "com_region": "ES SOUTH",
+    "handling": "GEN2",
+    "comunidad": "Andalucía",
+    "provincia": "Jaén"
+  },
+  {
+    "code": "LCG",
+    "name": "A Coruña",
+    "ops_subregion": "ES - NORTH WEST",
+    "com_region": "ES NORTH",
+    "handling": "GEN2",
+    "comunidad": "Galicia",
+    "provincia": "La Coruña"
+  },
+  {
+    "code": "LDM",
+    "name": "Lloret de Mar",
+    "ops_subregion": "ES - CATALONIA",
+    "com_region": "ES NORTH EAST",
+    "handling": "GEN2",
+    "comunidad": "Cataluña",
+    "provincia": "Gerona"
+  },
+  {
+    "code": "LEN",
+    "name": "León",
+    "ops_subregion": "ES - NORTH WEST",
+    "com_region": "ES NORTH",
+    "handling": "GEN2",
+    "comunidad": "Castilla y León",
+    "provincia": "León"
+  },
+  {
+    "code": "LER",
+    "name": "Lleida",
+    "ops_subregion": "ES - CATALONIA",
+    "com_region": "ES NORTH EAST",
+    "handling": "GEN2",
+    "comunidad": "Cataluña",
+    "provincia": "Lérida"
+  },
+  {
+    "code": "LNG",
+    "name": "Langreo",
+    "ops_subregion": "ES - NORTH WEST",
+    "com_region": "ES NORTH",
+    "handling": "GEN2",
+    "comunidad": "Asturias",
+    "provincia": "Asturias"
+  },
+  {
+    "code": "LOR",
+    "name": "Lorca",
+    "ops_subregion": "ES - MURCIA",
+    "com_region": "ES EAST",
+    "handling": "GEN2",
+    "comunidad": "Región de Murcia",
+    "provincia": "Murcia"
+  },
+  {
+    "code": "LPA",
+    "name": "Las Palmas de Gran Canaria",
+    "ops_subregion": "ES - CANARY",
+    "com_region": "ES SOUTH",
+    "handling": "GEN2",
+    "comunidad": "Canarias",
+    "provincia": "Las Palmas"
+  },
+  {
+    "code": "LUC",
+    "name": "Lucena",
+    "ops_subregion": "ES - ANDALUSIA",
+    "com_region": "ES SOUTH",
+    "handling": "GEN2",
+    "comunidad": "Andalucía",
+    "provincia": "Córdoba"
+  },
+  {
+    "code": "LUG",
+    "name": "Lugo",
+    "ops_subregion": "ES - NORTH WEST",
+    "com_region": "ES NORTH",
+    "handling": "GEN2",
+    "comunidad": "Galicia",
+    "provincia": "Lugo"
+  },
+  {
+    "code": "MAD",
+    "name": "Madrid",
+    "ops_subregion": "ES - MADRID",
+    "com_region": "ES MADRID",
+    "handling": "GEN2",
+    "comunidad": "Comunidad de Madrid",
+    "provincia": "Madrid"
+  },
+  {
+    "code": "MAI",
+    "name": "Mairena del Alcor",
+    "ops_subregion": "ES - ANDALUSIA",
+    "com_region": "ES SOUTH",
+    "handling": "GEN2",
+    "comunidad": "Andalucía",
+    "provincia": "Sevilla"
+  },
+  {
+    "code": "MAL",
+    "name": "Malaga",
+    "ops_subregion": "ES - ANDALUSIA",
+    "com_region": "ES SOUTH",
+    "handling": "GEN2",
+    "comunidad": "Andalucía",
+    "provincia": "Málaga"
+  },
+  {
+    "code": "MAO",
+    "name": "Mahon",
+    "ops_subregion": "ES - BALEARIC",
+    "com_region": "ES NORTH EAST",
+    "handling": "GEN2",
+    "comunidad": "Baleares",
+    "provincia": "Baleares"
+  },
+  {
+    "code": "MAS",
+    "name": "Masnou",
+    "ops_subregion": "ES - CATALONIA",
+    "com_region": "ES NORTH EAST",
+    "handling": "GEN2",
+    "comunidad": "Cataluña",
+    "provincia": "Barcelona"
+  },
+  {
+    "code": "MAT",
+    "name": "Mataró",
+    "ops_subregion": "ES - CATALONIA",
+    "com_region": "ES NORTH EAST",
+    "handling": "GEN2",
+    "comunidad": "Cataluña",
+    "provincia": "Barcelona"
+  },
+  {
+    "code": "MBA",
+    "name": "Marbella",
+    "ops_subregion": "ES - ANDALUSIA",
+    "com_region": "ES SOUTH",
+    "handling": "GEN2",
+    "comunidad": "Andalucía",
+    "provincia": "Málaga"
+  },
+  {
+    "code": "MGP",
+    "name": "Magaluf + Palma Nova",
+    "ops_subregion": "ES - BALEARIC",
+    "com_region": "ES NORTH EAST",
+    "handling": "GEN2",
+    "comunidad": "Baleares",
+    "provincia": "Baleares"
+  },
+  {
+    "code": "MIJ",
+    "name": "Mijas",
+    "ops_subregion": "ES - ANDALUSIA",
+    "com_region": "ES SOUTH",
+    "handling": "GEN2",
+    "comunidad": "Andalucía",
+    "provincia": "Málaga"
+  },
+  {
+    "code": "MNR",
+    "name": "Manresa",
+    "ops_subregion": "ES - CATALONIA",
+    "com_region": "ES NORTH EAST",
+    "handling": "GEN2",
+    "comunidad": "Cataluña",
+    "provincia": "Barcelona"
+  },
+  {
+    "code": "MOS",
+    "name": "Mostoles - Alcorcon - Arroyomolinos",
+    "ops_subregion": "ES - MADRID",
+    "com_region": "ES MADRID",
+    "handling": "GEN2",
+    "comunidad": "Comunidad de Madrid",
+    "provincia": "Madrid"
+  },
+  {
+    "code": "MOT",
+    "name": "Motril",
+    "ops_subregion": "ES - ANDALUSIA",
+    "com_region": "ES SOUTH",
+    "handling": "GEN2",
+    "comunidad": "Andalucía",
+    "provincia": "Granada"
+  },
+  {
+    "code": "MRX",
+    "name": "Montcada i Reixach",
+    "ops_subregion": "ES - CATALONIA",
+    "com_region": "ES NORTH EAST",
+    "handling": "GEN2",
+    "comunidad": "Cataluña",
+    "provincia": "Barcelona"
+  },
+  {
+    "code": "MSE",
+    "name": "Molina de Segura",
+    "ops_subregion": "ES - MURCIA",
+    "com_region": "ES EAST",
+    "handling": "GEN2",
+    "comunidad": "Región de Murcia",
+    "provincia": "Murcia"
+  },
+  {
+    "code": "MSP",
+    "name": "Maspalomas",
+    "ops_subregion": "ES - CANARY",
+    "com_region": "ES SOUTH",
+    "handling": "GEN2",
+    "comunidad": "Canarias",
+    "provincia": "Las Palmas"
+  },
+  {
+    "code": "MUR",
+    "name": "Murcia",
+    "ops_subregion": "ES - MURCIA",
+    "com_region": "ES EAST",
+    "handling": "GEN2",
+    "comunidad": "Región de Murcia",
+    "provincia": "Murcia"
+  },
+  {
+    "code": "NOM",
+    "name": "Madrid Norte (Majadahonda - Las Rozas - Boadilla - Torrelodones - Galapagar)",
+    "ops_subregion": "ES - MADRID",
+    "com_region": "ES MADRID",
+    "handling": "GEN2",
+    "comunidad": "Comunidad de Madrid",
+    "provincia": "Madrid"
+  },
+  {
+    "code": "NVA",
+    "name": "Nueva Andalucia",
+    "ops_subregion": "ES - ANDALUSIA",
+    "com_region": "ES SOUTH",
+    "handling": "GEN2",
+    "comunidad": "Andalucía",
+    "provincia": "Málaga"
+  },
+  {
+    "code": "NVL",
+    "name": "Novelda",
+    "ops_subregion": "ES - VALENCIA",
+    "com_region": "ES EAST",
+    "handling": "GEN2",
+    "comunidad": "Comunidad Valenciana",
+    "provincia": "Alicante"
+  },
+  {
+    "code": "ODB",
+    "name": "Córdoba",
+    "ops_subregion": "ES - ANDALUSIA",
+    "com_region": "ES SOUTH",
+    "handling": "GEN2",
+    "comunidad": "Andalucía",
+    "provincia": "Córdoba"
+  },
+  {
+    "code": "OUR",
+    "name": "Ourense",
+    "ops_subregion": "ES - NORTH WEST",
+    "com_region": "ES NORTH",
+    "handling": "GEN2",
+    "comunidad": "Galicia",
+    "provincia": "Orense"
+  },
+  {
+    "code": "OVD",
+    "name": "Oviedo",
+    "ops_subregion": "ES - NORTH WEST",
+    "com_region": "ES NORTH",
+    "handling": "GEN2",
+    "comunidad": "Asturias",
+    "provincia": "Asturias"
+  },
+  {
+    "code": "PAL",
+    "name": "Palma",
+    "ops_subregion": "ES - BALEARIC",
+    "com_region": "ES NORTH EAST",
+    "handling": "GEN2",
+    "comunidad": "Baleares",
+    "provincia": "Baleares"
+  },
+  {
+    "code": "PCR",
+    "name": "Puerto de la Cruz",
+    "ops_subregion": "ES - CANARY",
+    "com_region": "ES SOUTH",
+    "handling": "GEN2",
+    "comunidad": "Canarias",
+    "provincia": "Santa Cruz de Tenerife"
+  },
+  {
+    "code": "PDR",
+    "name": "Puerto del Rosario",
+    "ops_subregion": "ES - CANARY",
+    "com_region": "ES SOUTH",
+    "handling": "GEN2",
+    "comunidad": "Canarias",
+    "provincia": "Las Palmas"
+  },
+  {
+    "code": "PDS",
+    "name": "Puerto de Sagunto",
+    "ops_subregion": "ES - VALENCIA",
+    "com_region": "ES EAST",
+    "handling": "GEN2",
+    "comunidad": "Comunidad Valenciana",
+    "provincia": "Valencia"
+  },
+  {
+    "code": "PET",
+    "name": "Petrer",
+    "ops_subregion": "ES - VALENCIA",
+    "com_region": "ES EAST",
+    "handling": "GEN2",
+    "comunidad": "Comunidad Valenciana",
+    "provincia": "Alicante"
+  },
+  {
+    "code": "PIN",
+    "name": "Parla - Pinto",
+    "ops_subregion": "ES - MADRID",
+    "com_region": "ES MADRID",
+    "handling": "GEN2",
+    "comunidad": "Comunidad de Madrid",
+    "provincia": "Madrid"
+  },
+  {
+    "code": "PLC",
+    "name": "Palencia",
+    "ops_subregion": "ES - NORTH CENTER",
+    "com_region": "ES NORTH",
+    "handling": "GEN2",
+    "comunidad": "Castilla y León",
+    "provincia": "Palencia"
+  },
+  {
+    "code": "PNA",
+    "name": "Pamplona",
+    "ops_subregion": "ES - NORTH CENTER",
+    "com_region": "ES NORTH",
+    "handling": "GEN2",
+    "comunidad": "Navarra",
+    "provincia": "Navarra"
+  },
+  {
+    "code": "PON",
+    "name": "Ponferrada",
+    "ops_subregion": "ES - NORTH WEST",
+    "com_region": "ES NORTH",
+    "handling": "GEN2",
+    "comunidad": "Castilla y León",
+    "provincia": "León"
+  },
+  {
+    "code": "PTV",
+    "name": "Pontevedra",
+    "ops_subregion": "ES - NORTH WEST",
+    "com_region": "ES NORTH",
+    "handling": "GEN2",
+    "comunidad": "Galicia",
+    "provincia": "Pontevedra"
+  },
+  {
+    "code": "QSA",
+    "name": "Sabadell",
+    "ops_subregion": "ES - CATALONIA",
+    "com_region": "ES NORTH EAST",
+    "handling": "GEN2",
+    "comunidad": "Cataluña",
+    "provincia": "Barcelona"
+  },
+  {
+    "code": "QSD",
+    "name": "Quesada",
+    "ops_subregion": "ES - VALENCIA",
+    "com_region": "ES EAST",
+    "handling": "GEN2",
+    "comunidad": "Comunidad Valenciana",
+    "provincia": "Alicante"
+  },
+  {
+    "code": "RAR",
+    "name": "Rivas - Arganda",
+    "ops_subregion": "ES - MADRID",
+    "com_region": "ES MADRID",
+    "handling": "GEN2",
+    "comunidad": "Comunidad de Madrid",
+    "provincia": "Madrid"
+  },
+  {
+    "code": "REU",
+    "name": "Reus",
+    "ops_subregion": "ES - CATALONIA",
+    "com_region": "ES NORTH EAST",
+    "handling": "GEN2",
+    "comunidad": "Cataluña",
+    "provincia": "Tarragona"
+  },
+  {
+    "code": "RGS",
+    "name": "Burgos",
+    "ops_subregion": "ES - NORTH CENTER",
+    "com_region": "ES NORTH",
+    "handling": "GEN2",
+    "comunidad": "Castilla y León",
+    "provincia": "Burgos"
+  },
+  {
+    "code": "RIV",
+    "name": "Rincon de la Victoria",
+    "ops_subregion": "ES - ANDALUSIA",
+    "com_region": "ES SOUTH",
+    "handling": "GEN2",
+    "comunidad": "Andalucía",
+    "provincia": "Málaga"
+  },
+  {
+    "code": "RJL",
+    "name": "Logroño",
+    "ops_subregion": "ES - NORTH CENTER",
+    "com_region": "ES NORTH",
+    "handling": "GEN2",
+    "comunidad": "La Rioja",
+    "provincia": "La Rioja"
+  },
+  {
+    "code": "RQT",
+    "name": "Roquetas de Mar",
+    "ops_subregion": "ES - ANDALUSIA",
+    "com_region": "ES SOUTH",
+    "handling": "GEN2",
+    "comunidad": "Andalucía",
+    "provincia": "Almería"
+  },
+  {
+    "code": "RVE",
+    "name": "Riveira",
+    "ops_subregion": "ES - NORTH WEST",
+    "com_region": "ES NORTH",
+    "handling": "GEN2",
+    "comunidad": "Galicia",
+    "provincia": "La Coruña"
+  },
+  {
+    "code": "SAB",
+    "name": "San Antonio de Benageber",
+    "ops_subregion": "ES - VALENCIA",
+    "com_region": "ES EAST",
+    "handling": "GEN2",
+    "comunidad": "Comunidad Valenciana",
+    "provincia": "Valencia"
+  },
+  {
+    "code": "SCP",
+    "name": "Santa Cruz de la Palma",
+    "ops_subregion": "ES - CANARY",
+    "com_region": "ES SOUTH",
+    "handling": "GEN2",
+    "comunidad": "Canarias",
+    "provincia": "Santa Cruz de Tenerife"
+  },
+  {
+    "code": "SCQ",
+    "name": "Santiago de Compostela",
+    "ops_subregion": "ES - NORTH WEST",
+    "com_region": "ES NORTH",
+    "handling": "GEN2",
+    "comunidad": "Galicia",
+    "provincia": "La Coruña"
+  },
+  {
+    "code": "SES",
+    "name": "Roses",
+    "ops_subregion": "ES - CATALONIA",
+    "com_region": "ES NORTH EAST",
+    "handling": "GEN2",
+    "comunidad": "Cataluña",
+    "provincia": "Gerona"
+  },
+  {
+    "code": "SEV",
+    "name": "Sevilla",
+    "ops_subregion": "ES - ANDALUSIA",
+    "com_region": "ES SOUTH",
+    "handling": "GEN2",
+    "comunidad": "Andalucía",
+    "provincia": "Sevilla"
+  },
+  {
+    "code": "SIG",
+    "name": "Sitges",
+    "ops_subregion": "ES - CATALONIA",
+    "com_region": "ES NORTH EAST",
+    "handling": "GEN2",
+    "comunidad": "Cataluña",
+    "provincia": "Barcelona"
+  },
+  {
+    "code": "SLC",
+    "name": "Sanlúcar de Barrameda",
+    "ops_subregion": "ES - ANDALUSIA",
+    "com_region": "ES SOUTH",
+    "handling": "GEN2",
+    "comunidad": "Andalucía",
+    "provincia": "Cádiz"
+  },
+  {
+    "code": "SLM",
+    "name": "Salamanca",
+    "ops_subregion": "ES - CENTER",
+    "com_region": "ES EAST",
+    "handling": "GEN2",
+    "comunidad": "Castilla y León",
+    "provincia": "Salamanca"
+  },
+  {
+    "code": "SLO",
+    "name": "Salou",
+    "ops_subregion": "ES - CATALONIA",
+    "com_region": "ES NORTH EAST",
+    "handling": "GEN2",
+    "comunidad": "Cataluña",
+    "provincia": "Tarragona"
+  },
+  {
+    "code": "SNJ",
+    "name": "San Javier",
+    "ops_subregion": "ES - MURCIA",
+    "com_region": "ES EAST",
+    "handling": "GEN2",
+    "comunidad": "Región de Murcia",
+    "provincia": "Murcia"
+  },
+  {
+    "code": "SNP",
+    "name": "Santa Pola",
+    "ops_subregion": "ES - VALENCIA",
+    "com_region": "ES EAST",
+    "handling": "GEN2",
+    "comunidad": "Comunidad Valenciana",
+    "provincia": "Alicante"
+  },
+  {
+    "code": "SOM",
+    "name": "Leganés - Getafe",
+    "ops_subregion": "ES - MADRID",
+    "com_region": "ES MADRID",
+    "handling": "GEN2",
+    "comunidad": "Comunidad de Madrid",
+    "provincia": "Madrid"
+  },
+  {
+    "code": "STD",
+    "name": "Santander",
+    "ops_subregion": "ES - NORTH CENTER",
+    "com_region": "ES NORTH",
+    "handling": "GEN2",
+    "comunidad": "Cantabria",
+    "provincia": "Cantabria"
+  },
+  {
+    "code": "TBC",
+    "name": "Torremolinos - Benalmadena - Churriana",
+    "ops_subregion": "ES - ANDALUSIA",
+    "com_region": "ES SOUTH",
+    "handling": "GEN2",
+    "comunidad": "Andalucía",
+    "provincia": "Málaga"
+  },
+  {
+    "code": "TCC",
+    "name": "Tres Cantos",
+    "ops_subregion": "ES - MADRID",
+    "com_region": "ES MADRID",
+    "handling": "GEN2",
+    "comunidad": "Comunidad de Madrid",
+    "provincia": "Madrid"
+  },
+  {
+    "code": "TEL",
+    "name": "Telde",
+    "ops_subregion": "ES - CANARY",
+    "com_region": "ES SOUTH",
+    "handling": "GEN2",
+    "comunidad": "Canarias",
+    "provincia": "Las Palmas"
+  },
+  {
+    "code": "TFN",
+    "name": "Tenerife (Santa Cruz - La Laguna)",
+    "ops_subregion": "ES - CANARY",
+    "com_region": "ES SOUTH",
+    "handling": "GEN2",
+    "comunidad": "Canarias",
+    "provincia": "Santa Cruz de Tenerife"
+  },
+  {
+    "code": "TGN",
+    "name": "Tarragona",
+    "ops_subregion": "ES - CATALONIA",
+    "com_region": "ES NORTH EAST",
+    "handling": "GEN2",
+    "comunidad": "Cataluña",
+    "provincia": "Tarragona"
+  },
+  {
+    "code": "TLD",
+    "name": "Toledo",
+    "ops_subregion": "ES - CENTER",
+    "com_region": "ES EAST",
+    "handling": "GEN2",
+    "comunidad": "Castilla-La Mancha",
+    "provincia": "Toledo"
+  },
+  {
+    "code": "TLV",
+    "name": "Talavera",
+    "ops_subregion": "ES - CENTER",
+    "com_region": "ES EAST",
+    "handling": "GEN2",
+    "comunidad": "Castilla-La Mancha",
+    "provincia": "Toledo"
+  },
+  {
+    "code": "TRJ",
+    "name": "Torrevieja",
+    "ops_subregion": "ES - VALENCIA",
+    "com_region": "ES EAST",
+    "handling": "GEN2",
+    "comunidad": "Comunidad Valenciana",
+    "provincia": "Alicante"
+  },
+  {
+    "code": "TRL",
+    "name": "Torrelavega",
+    "ops_subregion": "ES - NORTH CENTER",
+    "com_region": "ES NORTH",
+    "handling": "GEN2",
+    "comunidad": "Cantabria",
+    "provincia": "Cantabria"
+  },
+  {
+    "code": "TRS",
+    "name": "Terrassa",
+    "ops_subregion": "ES - CATALONIA",
+    "com_region": "ES NORTH EAST",
+    "handling": "GEN2",
+    "comunidad": "Cataluña",
+    "provincia": "Barcelona"
+  },
+  {
+    "code": "UBD",
+    "name": "Ubeda",
+    "ops_subregion": "ES - ANDALUSIA",
+    "com_region": "ES SOUTH",
+    "handling": "GEN2",
+    "comunidad": "Andalucía",
+    "provincia": "Jaén"
+  },
+  {
+    "code": "URD",
+    "name": "Castro Urdiales",
+    "ops_subregion": "ES - NORTH CENTER",
+    "com_region": "ES NORTH",
+    "handling": "GEN2",
+    "comunidad": "Cantabria",
+    "provincia": "Cantabria"
+  },
+  {
+    "code": "VAC",
+    "name": "Valdemoro + Ciempozuelos",
+    "ops_subregion": "ES - MADRID",
+    "com_region": "ES MADRID",
+    "handling": "GEN2",
+    "comunidad": "Comunidad de Madrid",
+    "provincia": "Madrid"
+  },
+  {
+    "code": "VAL",
+    "name": "Valencia",
+    "ops_subregion": "ES - VALENCIA",
+    "com_region": "ES EAST",
+    "handling": "GEN2",
+    "comunidad": "Comunidad Valenciana",
+    "provincia": "Valencia"
+  },
+  {
+    "code": "VDA",
+    "name": "Villagarcia de Arosa",
+    "ops_subregion": "ES - NORTH WEST",
+    "com_region": "ES NORTH",
+    "handling": "GEN2",
+    "comunidad": "Galicia",
+    "provincia": "Pontevedra"
+  },
+  {
+    "code": "VEC",
+    "name": "Vecindario",
+    "ops_subregion": "ES - CANARY",
+    "com_region": "ES SOUTH",
+    "handling": "GEN2",
+    "comunidad": "Canarias",
+    "provincia": "Las Palmas"
+  },
+  {
+    "code": "VEL",
+    "name": "Velez-Malaga",
+    "ops_subregion": "ES - ANDALUSIA",
+    "com_region": "ES SOUTH",
+    "handling": "GEN2",
+    "comunidad": "Andalucía",
+    "provincia": "Málaga"
+  },
+  {
+    "code": "VIG",
+    "name": "Vigo",
+    "ops_subregion": "ES - NORTH WEST",
+    "com_region": "ES NORTH",
+    "handling": "GEN2",
+    "comunidad": "Galicia",
+    "provincia": "Pontevedra"
+  },
+  {
+    "code": "VIK",
+    "name": "Vic",
+    "ops_subregion": "ES - CATALONIA",
+    "com_region": "ES NORTH EAST",
+    "handling": "GEN2",
+    "comunidad": "Cataluña",
+    "provincia": "Barcelona"
+  },
+  {
+    "code": "VIT",
+    "name": "Vitoria",
+    "ops_subregion": "ES - NORTH CENTER",
+    "com_region": "ES NORTH",
+    "handling": "GEN2",
+    "comunidad": "País Vasco",
+    "provincia": "Álava"
+  },
+  {
+    "code": "VJO",
+    "name": "Villajoyosa",
+    "ops_subregion": "ES - VALENCIA",
+    "com_region": "ES EAST",
+    "handling": "GEN2",
+    "comunidad": "Comunidad Valenciana",
+    "provincia": "Alicante"
+  },
+  {
+    "code": "VLD",
+    "name": "Valdepenas",
+    "ops_subregion": "ES - CENTER",
+    "com_region": "ES EAST",
+    "handling": "GEN2",
+    "comunidad": "Castilla-La Mancha",
+    "provincia": "Ciudad Real"
+  },
+  {
+    "code": "VLG",
+    "name": "Vilanova i la Geltru",
+    "ops_subregion": "ES - CATALONIA",
+    "com_region": "ES NORTH EAST",
+    "handling": "GEN2",
+    "comunidad": "Cataluña",
+    "provincia": "Barcelona"
+  },
+  {
+    "code": "VLL",
+    "name": "Valladolid",
+    "ops_subregion": "ES - CENTER",
+    "com_region": "ES EAST",
+    "handling": "GEN2",
+    "comunidad": "Castilla y León",
+    "provincia": "Valladolid"
+  },
+  {
+    "code": "XRY",
+    "name": "Jerez de la Frontera",
+    "ops_subregion": "ES - ANDALUSIA",
+    "com_region": "ES SOUTH",
+    "handling": "GEN2",
+    "comunidad": "Andalucía",
+    "provincia": "Cádiz"
+  },
+  {
+    "code": "XTV",
+    "name": "Xativa",
+    "ops_subregion": "ES - VALENCIA",
+    "com_region": "ES EAST",
+    "handling": "GEN2",
+    "comunidad": "Comunidad Valenciana",
+    "provincia": "Valencia"
+  },
+  {
+    "code": "ZAR",
+    "name": "Zaragoza",
+    "ops_subregion": "ES - NORTH CENTER",
+    "com_region": "ES NORTH",
+    "handling": "GEN2",
+    "comunidad": "Aragón",
+    "provincia": "Zaragoza"
+  },
+  {
+    "code": "ZMR",
+    "name": "Zamora",
+    "ops_subregion": "ES - CENTER",
+    "com_region": "ES EAST",
+    "handling": "GEN2",
+    "comunidad": "Castilla y León",
+    "provincia": "Zamora"
+  }
+]
