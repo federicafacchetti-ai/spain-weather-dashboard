@@ -133,9 +133,14 @@ def _make_ssl_context():
 
 def fetch_bytes(url: str, api_key: str | None = None,
                 max_retries: int = 4, base_delay: int = 60) -> bytes:
-    """Fetch a URL with retries. Handles AEMET's 429 rate-limits gracefully by
-    waiting and re-trying with exponential backoff (60s, 120s, 240s, 480s)."""
-    import time
+    """
+    Fetch a URL with retries.
+      - HTTP 429 (rate-limit)  → exponential backoff (60/120/240/480s)
+      - Connection / socket timeouts → shorter backoff (10/20/40/80s)
+      - Other HTTP errors → immediate raise (no retry)
+    Uses a 60-second socket timeout — AEMET's TAR bundle can be 1–2 MB.
+    """
+    import time, socket
     req = urllib.request.Request(url)
     if api_key:
         req.add_header("api_key", api_key)
@@ -145,12 +150,11 @@ def fetch_bytes(url: str, api_key: str | None = None,
     last_err = None
     for attempt in range(max_retries + 1):
         try:
-            with urllib.request.urlopen(req, timeout=30, context=ctx) as resp:
+            with urllib.request.urlopen(req, timeout=60, context=ctx) as resp:
                 return resp.read()
         except urllib.error.HTTPError as e:
             last_err = e
             if e.code == 429 and attempt < max_retries:
-                # Respect Retry-After header if present, otherwise exponential backoff
                 retry_after = 0
                 try:
                     retry_after = int(e.headers.get("Retry-After") or 0)
@@ -161,7 +165,15 @@ def fetch_bytes(url: str, api_key: str | None = None,
                 time.sleep(delay)
                 continue
             raise
-    raise last_err  # re-raise after exhausting retries
+        except (urllib.error.URLError, socket.timeout, TimeoutError, ConnectionError, OSError) as e:
+            last_err = e
+            if attempt < max_retries:
+                delay = 10 * (2 ** attempt)  # 10 → 20 → 40 → 80s
+                log(f"Connection/timeout error ({e}) — retrying in {delay}s (attempt {attempt+1}/{max_retries})")
+                time.sleep(delay)
+                continue
+            raise
+    raise last_err
 
 
 def fetch_alerts_tar(api_key: str) -> bytes:
@@ -210,6 +222,20 @@ def parse_cap_xml(xml_bytes: bytes) -> list[dict]:
             area_desc = area.findtext("cap:areaDesc", default="", namespaces=CAP_NS)
             geocodes = [g.findtext("cap:value", default="", namespaces=CAP_NS)
                         for g in area.findall("cap:geocode", CAP_NS)]
+            # Parse <polygon> elements: text is "lat1,lon1 lat2,lon2 …" (space-separated).
+            polygons = []
+            for poly_el in area.findall("cap:polygon", CAP_NS):
+                text = (poly_el.text or "").strip()
+                if not text: continue
+                try:
+                    coords = []
+                    for pair in text.split():
+                        lat_s, lon_s = pair.split(",")
+                        coords.append((float(lat_s), float(lon_s)))
+                    if len(coords) >= 3:
+                        polygons.append(coords)
+                except Exception:
+                    pass
             out.append({
                 "identifier": identifier,
                 "sender": sender,
@@ -222,8 +248,60 @@ def parse_cap_xml(xml_bytes: bytes) -> list[dict]:
                 "expires": expires,
                 "area_desc": area_desc,
                 "geocodes": geocodes,
+                "polygons": polygons,
             })
     return out
+
+
+def point_in_polygon(lat: float, lon: float, polygon: list[tuple[float, float]]) -> bool:
+    """Ray-casting point-in-polygon check. polygon = [(lat, lon), …]."""
+    if len(polygon) < 3:
+        return False
+    x, y = lon, lat  # treat lon as x, lat as y
+    n = len(polygon)
+    inside = False
+    p1x, p1y = polygon[0][1], polygon[0][0]
+    for i in range(1, n + 1):
+        p2x, p2y = polygon[i % n][1], polygon[i % n][0]
+        if y > min(p1y, p2y) and y <= max(p1y, p2y) and x <= max(p1x, p2x):
+            xinters = None
+            if p1y != p2y:
+                xinters = (y - p1y) * (p2x - p1x) / (p2y - p1y) + p1x
+            if p1x == p2x or (xinters is not None and x <= xinters):
+                inside = not inside
+        p1x, p1y = p2x, p2y
+    return inside
+
+
+def match_alert_to_cities(alert: dict, cities: list[dict],
+                          aliases_by_prov: dict[str, set[str]],
+                          prov_to_cities: dict[str, list[dict]]) -> tuple[list[dict], str]:
+    """
+    Return (matched_cities, method).
+      method = "polygon" when the alert had a polygon and we matched geospatially.
+      method = "province" when we fell back to province-level substring match.
+    """
+    polygons = alert.get("polygons") or []
+    if polygons:
+        matched = []
+        for c in cities:
+            lat, lon = c.get("lat"), c.get("lon")
+            if lat is None or lon is None:
+                continue
+            for poly in polygons:
+                if point_in_polygon(lat, lon, poly):
+                    matched.append(c)
+                    break
+        # If nothing matched (e.g. the polygon covers a rural area with no Glovo cities),
+        # do NOT fall back to province — the alert simply doesn't affect any tracked city.
+        return matched, "polygon"
+
+    # No polygon → fall back to province name matching (imprecise, whole province)
+    matched = []
+    provs = match_alert_to_provinces(alert["area_desc"], aliases_by_prov)
+    for p in provs:
+        matched.extend(prov_to_cities.get(p, []))
+    return matched, "province"
 
 
 def parse_alerts_from_tar(tar_bytes: bytes) -> list[dict]:
@@ -318,32 +396,45 @@ def run(dry_run: bool = False, seed: bool = False, debug_code: str | None = None
     alerts = [a for a in alerts if a["level"] in ("RED", "ORANGE", "YELLOW")]
     log(f"Alerts parsed: {total_parsed} total → {len(alerts)} actionable (Y/O/R only)")
 
-    # Explode: one row per (alert × affected tracker-city)
+    # Explode: one row per (alert × affected tracker-city) using polygon precision
     now = dt.datetime.now(dt.timezone.utc).isoformat(timespec="seconds")
     hits = []
+    method_counts = {"polygon": 0, "province": 0}
+    unmatched_polygon = 0
     for a in alerts:
-        provs = match_alert_to_provinces(a["area_desc"], aliases)
-        for p in provs:
-            for city in prov_to_cities[p]:
-                hits.append({
-                    "captured_at": now,
-                    "alert_id": a["identifier"],
-                    "city_code": city["code"],
-                    "city_name": city["name"],
-                    "provincia": p,
-                    "comunidad": city["comunidad"],
-                    "ops_subregion": city["ops_subregion"],
-                    "com_region": city["com_region"],
-                    "level": a["level"],
-                    "event": a["event"],
-                    "event_type": a["event_type_short"],
-                    "onset": a["onset"],
-                    "expires": a["expires"],
-                    "hours": round(hours_between(a["onset"], a["expires"]), 2),
-                    "iso_week": isoweek_of(a["onset"]) or isoweek_of(now),
-                    "area_desc": a["area_desc"],
-                })
-    log(f"City-alert hits (all Y/O/R): {len(hits)}")
+        matched_cities, method = match_alert_to_cities(a, cities, aliases, prov_to_cities)
+        if method == "polygon" and not matched_cities:
+            unmatched_polygon += 1
+        method_counts[method] += len(matched_cities)
+        for city in matched_cities:
+            hits.append({
+                "captured_at": now,
+                "alert_id": a["identifier"],
+                "city_code": city["code"],
+                "city_name": city["name"],
+                "provincia": city["provincia"],
+                "comunidad": city["comunidad"],
+                "ops_subregion": city["ops_subregion"],
+                "com_region": city["com_region"],
+                "level": a["level"],
+                "event": a["event"],
+                "event_type": a["event_type_short"],
+                "onset": a["onset"],
+                "expires": a["expires"],
+                "hours": round(hours_between(a["onset"], a["expires"]), 2),
+                "iso_week": isoweek_of(a["onset"]) or isoweek_of(now),
+                "area_desc": a["area_desc"],
+                "match_method": method,
+            })
+    log(f"City-alert hits (all Y/O/R): {len(hits)}  "
+        f"(polygon: {method_counts['polygon']} · province-fallback: {method_counts['province']} · "
+        f"polygon alerts hitting no tracked city: {unmatched_polygon})")
+
+    # Warn if lots of cities are missing coordinates (would silently miss polygon-precise alerts)
+    missing_coords = [c["code"] for c in cities if c.get("lat") is None or c.get("lon") is None]
+    if missing_coords:
+        log(f"⚠ {len(missing_coords)} cities have no lat/lon — run `python3 geocode_cities.py` to add them. "
+            f"Missing: {', '.join(missing_coords[:10])}{'…' if len(missing_coords) > 10 else ''}")
 
     if debug_code:
         dc = debug_code.upper()
