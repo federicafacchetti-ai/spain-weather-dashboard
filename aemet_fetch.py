@@ -660,12 +660,13 @@ $$('.tab').forEach(t=>t.onclick=()=>{
 
 $('#last-update').textContent = 'Last updated ' + new Date(DATA.captured_at).toLocaleString('en-GB',{timeZone:'Europe/Madrid'}) + ' Madrid';
 
-// Refresh area: if served via http://localhost, show a working button.
-// If opened via file://, show a text hint pointing at the .command file.
+// Refresh area: if served via the LOCAL server (http://localhost), show a working button.
+// Otherwise (GitHub Pages, file://, any remote host) show a text hint — no backend there.
 (function setupRefresh(){
   const area = $('#refresh-area');
-  const isServed = location.protocol === 'http:' || location.protocol === 'https:';
-  if (isServed) {
+  const isLocalServer = (location.protocol === 'http:' || location.protocol === 'https:')
+                        && (location.hostname === 'localhost' || location.hostname === '127.0.0.1');
+  if (isLocalServer) {
     area.innerHTML = `
       <button class="refresh-btn" id="refresh-btn">🔄 Refresh now</button>
       <div class="refresh-status" id="refresh-status">Auto-refresh: 08:00 daily</div>`;
@@ -690,7 +691,12 @@ $('#last-update').textContent = 'Last updated ' + new Date(DATA.captured_at).toL
       }
     };
   } else {
-    area.innerHTML = `
+    // Remote (GitHub Pages) or file:// — no local backend to trigger a refresh.
+    const isRemote = location.protocol === 'https:' || location.protocol === 'http:';
+    area.innerHTML = isRemote ? `
+      <div class="refresh-hint">
+        <b>Read-only view.</b> This dashboard updates automatically once a day at 08:00 (Madrid) when the operator's Mac runs the fetch and pushes to GitHub Pages. Refresh isn't available here.
+      </div>` : `
       <div class="refresh-hint">
         <b>Manual refresh:</b> double-click <code>Refresh Dashboard.command</code> in the folder — or double-click <code>Start Dashboard.command</code> to run the dashboard as a proper server with a working Refresh button. Auto-refresh runs every day at 08:00.
       </div>`;
